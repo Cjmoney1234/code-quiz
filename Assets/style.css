@@ -1,0 +1,131 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+#start-page {
+    margin: 250px;
+}
+
+.home-page-btn {
+    font-size: 30px;
+    background-color: rgb(92, 157, 179);
+    border-radius: 10px;
+    color: rgba(245, 245, 245, 0.973);
+    padding: 10px;
+}
+
+#timer-notification {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#timer {
+    padding: 10px;
+    margin-top: -200px;
+    margin-right: 10px;
+    float: right;
+    font-weight:bolder ;
+    font-size: 35px;
+}
+
+p {
+    font-size: 40px;
+}
+
+.answers {
+    font-size: 30px;
+    background-color:  rgb(92, 157, 179);
+    border-radius: 25px;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#questions {
+    margin: 200px;
+}
+
+#quiz {
+    display: none;
+}
+
+#highscore-page {
+    display: none;
+    width: 30%;
+    border-color: silver;
+    padding-bottom: .3rem;
+    background: white;
+    text-align: justify;
+    color: rgb(74, 174, 207);
+    font-weight: bolder;
+}
+
+#highscore-initials {
+    margin-left: -80px;
+}
+
+
+#highscore-header{
+    border-color: silver;
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+    background-color: lightblue;
+    color: white;
+}
+
+
+#highscore-initials{
+    display: inline-block;
+    padding-left: 9.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#highscore-score{
+    float: right;
+    padding-right: 8.75rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#highscore-container {
+    display: none;
+}
+#end-game-btns {
+    display: none;
+    margin-top: 200px;
+}
+.endOfGameBtns {
+    color: whitesmoke;
+    background-color:  rgb(92, 157, 179);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: larger;
+}
+
+#endOfGame {
+    display: none;
+}
+
+button:hover {
+    box-shadow: 20px 20px 50px 15px silver;
+    cursor: pointer;
+}
+
+#final-score {
+    font-size: 30px;
+    margin-top: 400px;
+    line-height: 5.0;
+}
+
+#initials {
+    padding: 20px;
+}

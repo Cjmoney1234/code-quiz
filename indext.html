@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/style.css">
+    
+    <title>Document</title>
+</head>
+<body style="background-image: url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?size=626&ext=jpg&ga=GA1.2.487110606.1668359013); background-repeat: no-repeat; 
+                background-size: 100%;">
+    <div class="container">
+
+        <div id="start-page">
+            <h2>Coding Quiz Challenge</h2>
+            <p>This quiz will test your knowledge on coding!</p><br>
+        <button class="home-page-btn" id="start-btn">Start Quiz</button>
+        <p id="timer-notification">Please be mindful that this quiz is timed!</p><br><br><br>
+        <button class="home-page-btn" id="start-page-highscore" >High Scores</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timer"></div>
+                <div id="questions"><p></p></div>
+                    <button class="answers" id="a" onclick="checkAnswer('a')">A</button>
+                    <button class="answers" id="b" onclick="checkAnswer('b')">B</button>
+                    <button class="answers" id="c" onclick="checkAnswer('c')">C</button>
+                    <button class="answers" id="d" onclick="checkAnswer('d')">D</button>
+        </div>
+        <div id="endOfGame">
+        <div id="game-over">
+
+            <div id="final-score"></div>
+            <input type="text" size = "20" placeholder="Enter you initials..." name="intials" id="initials"/>
+            <button id="submit-score" style="background-color: rgb(92, 157, 179); border-radius: 25px; padding: 20px;">Submit Score</button>
+        </div>
+        <div id=highscore-container>
+        <div id="highscore-page">
+            <div id="highscore-header">
+                <h3>User Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <div id= "highscore-initials"></div>
+            <div id= "highscore-score"></div>
+        </div>
+        <div id="end-game-btns">
+            <button class="endOfGameBtns" id="play-again">Play Again</button>
+            <button class="endOfGameBtns" id="clear-highscore">Clear Highscores</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
