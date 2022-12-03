@@ -21,6 +21,8 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 var endOfGame = document.getElementById("endOfGame");
+var answerDisplay = document.getElementById("answer-display");
+
 
 var quizQuestions = [{
     question: "What is the correct JavaScript syntax to write 'Hello World'?",
@@ -91,7 +93,7 @@ function startQuiz(){
     timerInterval = setInterval(function() {
         timeLeft--;
         quizTimer.textContent = "Time left: " + timeLeft;
-        quizTimer.style.color = "red";
+        quizTimer.style.color = "yellow";
     
         if(timeLeft === 0) {
           clearInterval(timerInterval);
@@ -190,15 +192,21 @@ function replayQuiz(){
 // This function checks the response to each answer 
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
+    var p = document.createElement("p");
+    answerDisplay.appendChild(p);
+
+    setTimeout(function() {
+        p.style.display = "none";
+    }, 1000);
 
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
         score++;
-        alert("Correct!");
+        p.textContent = "Correct!";
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-        alert("Incorrect.")
+        p.textContent = "Incorrect!";
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is wrong.

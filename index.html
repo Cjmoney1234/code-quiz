@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
     
-    <title>Document</title>
+    <title>Coding Quiz</title>
 </head>
-<body style="background-image: url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?size=626&ext=jpg&ga=GA1.2.487110606.1668359013); background-repeat: no-repeat; 
-                background-size: 100%;">
+<body style="background-image: url(./Assets/dark_background15.jpg); background-repeat: no-repeat; 
+                background-size: 100% 120%; ">
     <div class="container">
 
         <div id="start-page">
             <h2>Coding Quiz Challenge</h2>
             <p>This quiz will test your knowledge on coding!</p><br>
         <button class="home-page-btn" id="start-btn">Start Quiz</button>
-        <p id="timer-notification">Please be mindful that this quiz is timed!</p><br><br><br>
+        <p class="timer-notification">Please be mindful that this quiz is timed!</p>
+        <p class="timer-notification">You have 30 seconds to answer 5 questions, <strong style="color: red;">Good Luck! </strong></p><br><br>
         <button class="home-page-btn" id="start-page-highscore" >High Scores</button>
         </div>
 
@@ -27,6 +28,7 @@
                     <button class="answers" id="b" onclick="checkAnswer('b')">B</button>
                     <button class="answers" id="c" onclick="checkAnswer('c')">C</button>
                     <button class="answers" id="d" onclick="checkAnswer('d')">D</button>
+                    <p id="answer-display"></p>
         </div>
         <div id="endOfGame">
         <div id="game-over">

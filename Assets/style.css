@@ -23,7 +23,7 @@ h2 {
     padding: 10px;
 }
 
-#timer-notification {
+.timer-notification {
     font-size: 12px;
     font-style: italic;
 }
@@ -42,15 +42,25 @@ p {
 }
 
 .answers {
-    font-size: 30px;
+    font-size: 28px;
     background-color:  rgb(92, 157, 179);
     border-radius: 25px;
     color: whitesmoke;
     padding: 10px;
 }
 
+.answers:hover {
+    font-size: 40px;
+}
+
 #questions {
     margin: 200px;
+}
+
+#answer-display {
+    color: greenyellow;
+    position: absolute;
+    margin: 250px 850px;
 }
 
 #quiz {
@@ -64,12 +74,18 @@ p {
     padding-bottom: .3rem;
     background: white;
     text-align: justify;
-    color: rgb(74, 174, 207);
+    color: rgb(92, 157, 179);
     font-weight: bolder;
+    border-radius: 10px 10px;
+    border-style: outset;
 }
 
 #highscore-initials {
-    margin-left: -80px;
+    margin-left: -20px;
+}
+
+#highscore-score {
+    margin-right: 20px;
 }
 
 
@@ -78,7 +94,7 @@ p {
     display:flex;
     justify-content: space-evenly;
     margin-bottom: 5px;
-    background-color: lightblue;
+    background-color: rgb(92, 157, 179);
     color: white;
 }
 
@@ -99,6 +115,7 @@ p {
 #highscore-container {
     display: none;
 }
+
 #end-game-btns {
     display: none;
     margin-top: 200px;
@@ -116,7 +133,7 @@ p {
 }
 
 button:hover {
-    box-shadow: 20px 20px 50px 15px silver;
+    box-shadow: 5px 5px 30px 10px black;
     cursor: pointer;
 }
 
