@@ -93,7 +93,7 @@ function startQuiz(){
     timerInterval = setInterval(function() {
         timeLeft--;
         quizTimer.textContent = "Time left: " + timeLeft;
-        quizTimer.style.color = "yellow";
+        quizTimer.style.color = "greenyellow";
     
         if(timeLeft === 0) {
           clearInterval(timerInterval);
@@ -192,21 +192,21 @@ function replayQuiz(){
 // This function checks the response to each answer 
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
-    var p = document.createElement("p");
-    answerDisplay.appendChild(p);
+    var h2 = document.createElement("h2");
+    answerDisplay.appendChild(h2);
 
     setTimeout(function() {
-        p.style.display = "none";
+        h2.style.display = "none";
     }, 1000);
 
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
         score++;
-        p.textContent = "Correct!";
+        h2.textContent = "Correct!";
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is correct.
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-        p.textContent = "Incorrect!";
+        h2.textContent = "Incorrect!";
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is wrong.
