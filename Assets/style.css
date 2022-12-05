@@ -12,7 +12,7 @@ h2 {
 }
 
 #start-page {
-    margin: 250px;
+    margin: 242px;
 }
 
 .home-page-btn {
@@ -60,7 +60,7 @@ p {
 #answer-display {
     color: greenyellow;
     position: absolute;
-    margin: 250px 850px;
+    margin: 150px 850px;
 }
 
 #quiz {
