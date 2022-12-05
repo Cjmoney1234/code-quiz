@@ -25,3 +25,7 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
+
+Launch Code Quiz
+
+https://cjmoney1234.github.io/code-quiz/
